@@ -1,4 +1,6 @@
 import Image from "next/image";
+// 1. Import the logo explicitly from your public folder
+import logoAsset from "@/public/s3tek-logo.png";
 
 export default function SignInPage() {
   return (
