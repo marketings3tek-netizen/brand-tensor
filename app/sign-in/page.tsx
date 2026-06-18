@@ -4,17 +4,14 @@ import logoAsset from "@/public/s3tek-logo.png";
 
 export default function SignInPage() {
   return (
-    /* Master Canvas: Handles custom padding and full viewport tracking */
     <div className="min-h-screen w-full bg-black text-white antialiased flex flex-col justify-between p-6 sm:p-10 md:grid md:grid-cols-2 md:p-0 box-border overflow-y-auto md:overflow-hidden relative">
       
-      {/* ================= GLOBAL BRANDING LOGO POSITIONING ================= */}
+      {/* ================= BRANDING LOGO POSITIONING ================= */}
       <div className="absolute top-6 left-6 sm:top-10 sm:left-10 z-50">
         <Image 
-          src="/s3tek-logo.png" 
+          src={logoAsset} // 2. Pass the imported asset directly here
           alt="S3TEK Logo" 
-          width={110} 
-          height={32} 
-          className="h-auto w-auto object-contain brightness-95 tracking-widest"
+          className="h-8 w-auto object-contain brightness-95"
           priority
         />
       </div>
